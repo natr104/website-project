@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+      rel="stylesheet"> -->
     <link rel="icon" href="./images/rocket.png">
     <title>Nathan Troy | Software Engineering Student</title>
   </head>
@@ -16,7 +16,7 @@
     <nav class="navbar">
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <a class="active" href="#home">Home</a>
         </li>
         <li>
           <a href="#about_me">About Me</a>
@@ -32,20 +32,22 @@
         </li>
       </ul>
     </nav>
-  <header>
-    <h1 class="my_name" id="about_me">Nathan Troy</h1>
-    <h3 class="location" id="my_location">Sydney, Australia</h3>
-    <h2 class="describe_me" id="describe_me">Full-stack Software Engineering Student</h2>
-    <p>Hi! I'm Nathan Troy and I am an aspiring full-stack software engineer currently studying with Academy Xi. I created this website for my HTML/CSS project in the first unit of my studies. When I'm not coding or looking after my baby daughter, I enjoy playing video games.</p>
-
-  </header>
   <main>
+    <section class="about_me">
+  <!-- <header> -->
+      <h1 class="my_name" id="about_me">Nathan Troy</h1>
+      <h3 class="location" id="my_location">Sydney, Australia</h3>
+      <h2 class="describe_me" id="describe_me">Full-stack Software Engineering Student</h2>
+      <p>Hi! I'm Nathan Troy and I am an aspiring full-stack software engineer currently studying with Academy Xi. I created this website for my HTML/CSS project in the first unit of my studies. When I'm not coding or looking after my baby daughter, I enjoy playing video games.</p>
+    </section>
+  <!-- </header> -->
+  <!-- <main> -->
     <section class="career">
-      <h2>My Career So Far</h2>
+      <h2 id="career">My Career So Far</h2>
       <p>I studied Chemistry at the University of New South Wales and graduated in 2014. After graduation, I worked for nearly 7 years at a contract cosmetics manufacturer as a Quality Assurance Chemist and was later promoted to Senior QA Chemist. In late 2021 I felt that it was time for a career change and when I came across Academy Xi I decided to take the plunge and enroll.</p>
     </section>    
     <section class="projects">
-      <h1 class="projects" id="project_heading">Projects</h1>
+      <h1 class="projects" id="projects">Projects</h1>
       <ul>
         <li>JavaScript Project</li>
         <li>React Project</li>
@@ -54,7 +56,7 @@
       </ul>
     </section>
     <section class="contact">
-      <h2>Contact Me</h2>
+      <h2 id="contact">Contact Me</h2>
         <ul class="socials">
           <li>
             <a href="https://medium.com/@natr104">Blog</a>
