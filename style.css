@@ -2,9 +2,11 @@ body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-main {
-    margin-top: 4em;
-    margin-left: auto;
+
+.about {
+    margin-top: 1em;
+    
+
 }
 .navbar {
     overflow: hidden;  
@@ -25,7 +27,7 @@ main {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
 }
 .navbar a:hover {
     background-color: #1967D2;
