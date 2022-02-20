@@ -8,11 +8,16 @@ body {
     
 
 }
+main {
+    padding-top: 3em;
+}
 .navbar {
     overflow: hidden;  
+    display: block;
 }
 .navbar ul {
     float: left;
+    display: flex;
     list-style-type: none;
     padding-inline-start: 0;
     margin: 0;
@@ -22,7 +27,6 @@ body {
     background-color: #ECEFF1;
 }
 .navbar a {
-    float: left;
     display: block;
     color: black;
     text-align: center;
