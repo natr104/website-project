@@ -5,10 +5,15 @@ body {
 * {
     box-sizing: border-box;
   }
+h2 {
+    margin-top: 0;
+}
+h1 {
+    margin-top: 0;
+}
 main {
-    padding-top: 50px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 .navbar {
     overflow: hidden;  
@@ -25,6 +30,7 @@ main {
     top: 0;
     width: 100%;
     background-color: #ECEFF1;
+    z-index: 100;
 }
 .navbar a {
     /* float: left; */
@@ -43,9 +49,44 @@ main {
     background-color: #0D47A1;
     color: white;
 }
+.about_container {
+    background-color: aqua;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 4em;
+}
+.career_container {
+    background-color: yellow;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.project_container {
+    background-color: fuchsia;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.contact_container {
+    background-color:greenyellow;
+    padding: 1em;
+}
+div.project_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+}
+div.social ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+}
+
 @media screen and (max-width: 800px) {
     .navigation {
         justify-content: space-around;
+    }
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 @media screen and (max-width: 500px) {
@@ -56,7 +97,12 @@ main {
         position: unset;
         flex-direction: column;
     }
-    main {
-        padding-top: 0;
+    .about_container {
+        margin-top: 1em;
     }
+    main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
 }
