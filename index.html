@@ -1,101 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"> -->
-    <link rel="icon" href="./images/rocket.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="icon" href="./images/rocket.png" />
     <title>Nathan Troy | Software Engineering Student</title>
   </head>
   <body>
-    <header>
+      <!-- hero image -->
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Nathan Troy</h1>
+          <h2>Full Stack Software Engineer</h2>
+          <button>About me</button>
+        </div>
+      </div>
+      <!-- sticky navbar -->
       <nav class="navbar">
-        <ul class = "navigation">
-          <li>
-            <a class="active" href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about_me">About Me</a>
-          </li>
-          <li>
-            <a href="#career">My Career</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+        <a class="active" href="#home">Home</a>
+        <a href="#about_me">About Me</a>
+        <a href="#career">My Career</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
-    </header>
-  <main>
-    <section class="about_container" id="about_me">
-      <div class="about">
-        <h1>Nathan Troy</h1>
-        <h3>Sydney, Australia</h3>
-        <h2>Full-stack Software Engineering Student</h2>
-        <p>Hi! I'm Nathan Troy and I am an aspiring full-stack software engineer currently studying with Academy Xi. I created this website for my HTML/CSS project in the first unit of my studies. When I'm not coding or looking after my baby daughter, I enjoy playing video games.</p>
-      </div>
-    </section>
-    <section class="career_container" id="career">
-      <div class="career">
-        <h2>My Career So Far</h2>
-        <p>I studied Chemistry at the University of New South Wales and graduated in 2014. After graduation, I worked for nearly 7 years at a contract cosmetics manufacturer as a Quality Assurance Chemist and was later promoted to Senior QA Chemist. In late 2021 I felt that it was time for a career change and when I came across Academy Xi I decided to take the plunge and enroll.</p>
-      </div>
-    </section>    
-    <section class="project_container">
-      <h2 id="projects">Projects</h2>
-      <div class="project_list">
-        <div class="project" id="javascript">
-          <h3>Javascript Project</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et unde pariatur dolore labore, perferendis eaque consectetur animi quibusdam harum eos provident deserunt excepturi iusto est architecto, iure alias laboriosam.</p>
+    <main>
+      <div class="container"></div>
+      <!-- <section class="about_container" id="about_me">
+        <div class="about">
+          <h1>Nathan Troy</h1>
+          <h3>Sydney, Australia</h3>
+          <h2>Full-stack Software Engineering Student</h2>
+          <p>
+            Hi! I'm Nathan Troy and I am an aspiring full-stack software
+            engineer currently studying with Academy Xi. I created this website
+            for my HTML/CSS project in the first unit of my studies. When I'm
+            not coding or looking after my baby daughter, I enjoy playing video
+            games.
+          </p>
         </div>
-        <div class="project" id="react">
-          <h3>React Project</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et unde pariatur dolore labore, perferendis eaque consectetur animi quibusdam harum eos provident deserunt excepturi iusto est architecto, iure alias laboriosam.</p>
+      </section>
+      <section class="career_container" id="career">
+        <div class="career">
+          <h2>My Career So Far</h2>
+          <p>
+            I studied Chemistry at the University of New South Wales and
+            graduated in 2014. After graduation, I worked for nearly 7 years at
+            a contract cosmetics manufacturer as a Quality Assurance Chemist and
+            was later promoted to Senior QA Chemist. In late 2021 I felt that it
+            was time for a career change and when I came across Academy Xi I
+            decided to take the plunge and enroll.
+          </p>
         </div>
-        <div class="project" id="ruby">
-          <h3>Ruby Project</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et unde pariatur dolore labore, perferendis eaque consectetur animi quibusdam harum eos provident deserunt excepturi iusto est architecto, iure alias laboriosam.</p>
+      </section>
+      <section class="project_container">
+        <h2 id="projects">Projects</h2>
+        <div class="project_list">
+          <div class="project" id="javascript">
+            <h3>Javascript Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              et unde pariatur dolore labore, perferendis eaque consectetur
+              animi quibusdam harum eos provident deserunt excepturi iusto est
+              architecto, iure alias laboriosam.
+            </p>
+          </div>
+          <div class="project" id="react">
+            <h3>React Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              et unde pariatur dolore labore, perferendis eaque consectetur
+              animi quibusdam harum eos provident deserunt excepturi iusto est
+              architecto, iure alias laboriosam.
+            </p>
+          </div>
+          <div class="project" id="ruby">
+            <h3>Ruby Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              et unde pariatur dolore labore, perferendis eaque consectetur
+              animi quibusdam harum eos provident deserunt excepturi iusto est
+              architecto, iure alias laboriosam.
+            </p>
+          </div>
+          <div class="project" id="rails">
+            <h3>Rails/Redux Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              et unde pariatur dolore labore, perferendis eaque consectetur
+              animi quibusdam harum eos provident deserunt excepturi iusto est
+              architecto, iure alias laboriosam.
+            </p>
+          </div>
         </div>
-        <div class="project" id="rails">
-          <h3>Rails/Redux Project</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et unde pariatur dolore labore, perferendis eaque consectetur animi quibusdam harum eos provident deserunt excepturi iusto est architecto, iure alias laboriosam.</p>
+      </section> -->
+
+      <!-- <section class="contact_container">
+        <h2 id="contact">Contact Me</h2>
+        <div class="contact-links">
+              <a href="https://medium.com/@natr104">Blog</a>
+              <a href="https://github.com/natr104">Github</a>
+              <a href="https://twitter.com/natr104">Twitter</a>
+              <a href="https://www.linkedin.com/in/natr104/">LinkedIn</a>
+              <a href="mailto:nathan.troy.dev@gmail.com">Email</a>
+            </ul>
         </div>
-      </div>
-    </section>
-    <section class="contact_container">
-      <h2 id="contact">Contact Me</h2>
-      <div class="social">
-        <ul class="socials">
-          <li>
-            <a href="https://medium.com/@natr104">Blog</a>
-          </li>
-          <li>
-            <a href="https://github.com/natr104">Github</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/natr104">Twitter</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/nathan-troy-9abb60165/">LinkedIn</a>
-          </li>
-          <li>
-            <a href="mailto:nathan.troy.dev@gmail.com">Email</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>    
-  <footer>
-        <p>Copyright Nathan Troy © 2022</p>
-        <p>Website designed and developed by Nathan Troy</p>
-  </footer>
+      </section> -->
+    </main>
+    <footer>
+      <p>Copyright Nathan Troy © 2022</p>
+      <p>Website designed and developed by Nathan Troy</p>
+    </footer>
   </body>
 </html>
