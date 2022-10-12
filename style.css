@@ -1,160 +1,182 @@
 body {
-    margin: 0;
-    background-color: #ECEFF1;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    min-height: 100vh; /* fix footer to bottom of page */
-    display: flex; /* fix footer to bottom of page */
-    flex-direction: column; /* fix footer to bottom of page */
+  margin: 0;
+  background-color: #ECEFF1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh; /* fix footer to bottom of page */
+  display: flex; /* fix footer to bottom of page */
+  flex-direction: column; /* fix footer to bottom of page */
 }
+
 * {
-    box-sizing: border-box; /* use border-box to get predicatble box sizing */
-  }
+  box-sizing: border-box; /* use border-box to get predicatble box sizing */
+}
+
 h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
+
 h1 {
-    margin-top: 0;
+  margin-top: 0;
 }
+
 h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
+
 main {
-    display: block;  /* fix footer to bottom of page */
-    flex: 1 0 auto;  /* fix footer to bottom of page */
-    padding-left: 10%;
-    padding-right: 10%;
+  display: block; /* fix footer to bottom of page */
+  flex: 1 0 auto; /* fix footer to bottom of page */
+  padding-left: 10%;
+  padding-right: 10%;
 }
+
 footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 1em;
-    text-align: center;
-    background-color: #333;
-    color: white;
-    margin-top: 1em;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  margin-top: 1em;
 }
+
 footer p {
-    margin: 0;
+  margin: 0;
 }
+
 .navbar {
-    overflow: hidden;  
+  overflow: hidden;
 }
+
 .navigation {
-    /* float: left; */
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    list-style-type: none;
-    padding-inline-start: 0;
-    margin: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 100;
+  /* float: left; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 100;
 }
+
 .navbar a {
-    /* float: left; */
-    display: flex;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 16px;
+  /* float: left; */
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
 }
+
 .navbar a:hover {
-    background-color: #1967D2;
+  background-color: #1967D2;
 }
+
 .navbar a.active {
-    background-color: #0D47A1;
+  background-color: #0D47A1;
 }
+
 .about_container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/hacking.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1em;
-    margin-bottom: 1em;
-    margin-top: 4em;
-    color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/hacking.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em;
+  margin-bottom: 1em;
+  margin-top: 4em;
+  color: white;
 }
+
 .career_container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/chemistry.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1em;
-    margin-bottom: 1em;
-    color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/chemistry.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em;
+  margin-bottom: 1em;
+  color: white;
 }
+
 .project_container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/project.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1em;
-    margin-bottom: 1em;
-    color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/project.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em;
+  margin-bottom: 1em;
+  color: white;
 }
+
 .contact_container {
-    background-color: #ECEFF1;
-    padding: 1em;
+  background-color: #ECEFF1;
+  padding: 1em;
 }
+
 div.project_list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-self: center;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-self: center;
+  gap: 1rem;
 }
+
 div.social ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 2rem;
-    list-style-type: none;
-    background-color: #333;
-    padding: 14px 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+  list-style-type: none;
+  background-color: #333;
+  padding: 14px 16px;
 }
+
 .social a {
-    font-size: 16px;
-    padding: 14px 16px;
-    /* background-color: #ECEFF1; */
-    text-decoration: none;
-    text-align: center;
-    color: white;
+  font-size: 16px;
+  padding: 14px 16px;
+  /* background-color: #ECEFF1; */
+  text-decoration: none;
+  text-align: center;
+  color: white;
 }
+
 .social a:hover {
-    background-color: #1967D2;
-    color: white;
+  background-color: #1967D2;
+  color: white;
 }
+
 .project {
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
 }
 
 @media screen and (max-width: 800px) {
-    .navigation {
-        justify-content: space-around;
-    }
-    main {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+  .navigation {
+    justify-content: space-around;
+  }
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 @media screen and (max-width: 500px) {
-    .navbar a{
-        display: block;
-    }
-    .navigation {
-        position: unset;
-        flex-direction: column;
-    }
-    .about_container {
-        margin-top: 1em;
-    }
-    main {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
+  .navbar a {
+    display: block;
+  }
+  .navigation {
+    position: unset;
+    flex-direction: column;
+  }
+  .about_container {
+    margin-top: 1em;
+  }
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
