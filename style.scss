@@ -1,25 +1,59 @@
 $primary-colour: #333;
+$background-colour: #eceff1;
 
 * {
   box-sizing: border-box; /* use border-box to get predicatble box sizing */
 }
+
 html {
     height: 100%;
 }
+
 body {
   height: 100%;
   margin: 0;
-  background-color: #eceff1;
+  background-color: $background-colour;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
 }
+.container {
+  height: 100%;
+
+}
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .container {max-width: 1440px; margin-left: auto; margin-right: auto;}
+}
+
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/me.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
 }
 .hero-text {
@@ -45,10 +79,7 @@ body {
 .navbar a.active {
   background-color: #0d47a1;
 }
-// main {
-//   display: block; /* fix footer to bottom of page */
-//   flex: 1 0 auto; /* fix footer to bottom of page */
-// }
+
 footer {
   left: 0;
   bottom: 0;
